@@ -11,7 +11,7 @@ else:
     exit()
 
 def get_itunes_id(title, artist, album):
-    base_url = "https://itunes.apple.com/search?country=FR&media=music&entity=song&limit=5&term="
+    base_url = "https://itunes.apple.com/search?country=US&media=music&entity=song&limit=5&term="
     try:
         url = base_url + urllib.parse.quote(title + " " + artist + " " + album)
         request = urllib.request.Request(url)
